@@ -1,6 +1,1 @@
-#include <stdio.h>
-
-int main(void){
-    printf("Hello,GitHub!\n");
-    return 0;
-}
+//担当 田邊
