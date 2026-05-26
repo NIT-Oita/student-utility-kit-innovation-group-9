@@ -20,4 +20,3 @@ logic.c 小股
 stroage.c 池田
 
 ファイルの入出力等々
-
