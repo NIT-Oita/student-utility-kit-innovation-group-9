@@ -1,0 +1,2 @@
+suto:
+	gcc storage
