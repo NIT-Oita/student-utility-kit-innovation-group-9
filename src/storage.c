@@ -3,7 +3,7 @@
 
 //このコメントが見えているということはこのファイルは不完全だということです。現状このコードはテストビルドの為にmain関数を使っています。それに留意すること
 
-int main(void){
+int storage(){
     printf("テストファイル生成\n");
     FILE *fp;
     fp = fopen("test.txt","w");

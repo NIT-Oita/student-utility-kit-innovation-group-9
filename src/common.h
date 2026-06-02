@@ -12,4 +12,5 @@ int  done;          /* 0 or 1    */
 int  task_urgency(const Task *t,
 const char *today);
 void task_sort(Task *list, int n);
+int storage();
 #endif
