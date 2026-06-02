@@ -25,7 +25,20 @@ int main(void)
     printf("課題は完了してる？(終わってる:0   終わってない:1)\n");
     scanf("%d",&done);
 
-    
+    printf("\n\n===課題の概要===\n\n");
+    printf("課題：%s \n",title);
+    printf("期限：%s \n",deadline);
+    printf("優先度：%d \n",priority);
+    if(done==1){
+            printf("状態：未完了．．．\n");
+    }else if(done==0){
+            printf("状態：完了！！\n");
+    }else{
+            printf("0か1を入力しろカス");
+    }
+   
+
+
 
 
 
