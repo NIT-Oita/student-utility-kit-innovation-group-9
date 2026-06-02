@@ -1,43 +1,55 @@
 //担当 田邊
 //テスト002
 #include<stdio.h>
+#include<string.h>
 #include"common.h"
 int main(void)
 {
     int  id;
-    char title[64];
-    char deadline[11];  /* YYYY-MM-DD */
-    int  priority;      /* 1..5      */
-    int  done;          /* 0 or 1    */
-    
+    char title[100][256];
+    char deadline[100][11];  /* YYYY-MM-DD */
+    int  priority[100];      /* 1..5      */
+    int  done[100];          /* 0 or 1    */
+    int count = 0;
 
     printf("=========素晴らしき課題管理ツール=========\n\n");
+while(1){
+    printf("追加する課題を入力して！(終了:q)\n");
+    scanf("%s",title[count]);
 
-    printf("追加する課題を入力して！\n");
-    scanf("%s",title);
 
+    if(strcmp(title[count], "q") == 0){
+        break;
+    }
     printf("課題の締め切りを入力して！ (YYYY-MM-DD)\n");
-    scanf("%s",deadline);
+    scanf("%s",deadline[count]);
 
     printf("課題の優先度を入力して！ (1~5)\n");
-    scanf("%d",&priority);
+    scanf("%d",&priority[count]);
 
     printf("課題は完了してる？(終わってる:0   終わってない:1)\n");
-    scanf("%d",&done);
+    scanf("%d",&done[count]);
 
-    printf("\n\n===課題の概要===\n\n");
-    printf("課題：%s \n",title);
-    printf("期限：%s \n",deadline);
-    printf("優先度：%d \n",priority);
-    if(done==1){
-            printf("状態：未完了．．．\n");
-    }else if(done==0){
-            printf("状態：完了！！\n");
+    
+    
+    count ++;
+}
+    printf("\n===課題一覧===\n");
+
+for(int i = 0; i < count; i++){
+    printf("%d件目\n", i + 1);
+    printf("課題:%s\n", title[i]);
+    printf("期限:%s\n", deadline[i]);
+    printf("優先度:%d\n", priority[i]);
+
+    if(done[i] == 1){
+        printf("状態:未完了\n");
     }else{
-            printf("0か1を入力しろカス");
+        printf("状態:完了\n");
     }
-   
 
+    printf("\n");
+}
 
 
 
