@@ -22,6 +22,15 @@ int main(void)
     printf("課題の優先度を入力して！ (1~5)\n");
     scanf("%d",&priority);
 
+    printf("課題は完了してる？(終わってる:0   終わってない:1)\n");
+    scanf("%d",&done);
+
+    
+
+
+
+
+
     
 
 
