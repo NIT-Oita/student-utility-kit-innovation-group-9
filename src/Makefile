@@ -1,2 +1,2 @@
 suto:
-	gcc storage
+	gcc storage.c -o app
