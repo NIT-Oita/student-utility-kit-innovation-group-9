@@ -1,2 +1,3 @@
 suto:
-	gcc storage.c -o app
+	gcc main.c storage.c logic.c -o app
+	app
