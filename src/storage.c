@@ -8,7 +8,8 @@ int file_kakunin(){
     if(fp == NULL){
         fp = fopen("data.csv","w");
     }
-
+    fclose(fp);
+    return 0;
 }
 
 int csv_kakikomi(DATA *task){

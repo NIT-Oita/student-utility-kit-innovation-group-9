@@ -21,9 +21,19 @@ int main(void)
     }
 
     OUTPUT://出力担当
-    output();
-    file_kakunin();
-    goto FIRST;
+    int kakunin = 0;
+    printf("\x1b[34m~~~\x1b[39m上から出力(1)or優先度出力(2)?\x1b[34m~~~\x1b[39m\n");
+    printf("\x1b[33m>>>\x1b[39m");
+    scanf("%d",&kakunin);
+    if(kakunin == 1){
+        file_kakunin();
+        output();
+        goto FIRST;
+    }else{
+        file_kakunin();
+        output_r();
+        goto FIRST;
+    }
 
     INPUT://入力担当
     input();

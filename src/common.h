@@ -5,7 +5,7 @@
 #include <windows.h>
 #include <string.h>
 #include <time.h>
-#include<string.h>
+#include <stdlib.h>
 typedef struct{
     char name[1024];
     char deadline[1024];
@@ -15,8 +15,10 @@ typedef struct{
 
 int file_kakunin();
 int output();
+int output_r();
 int input();
 int csv_kakikomi(DATA *task);
 int csv_yomikomi(DATA task[], int *count);
+int narabikae(const void *a, const void *b);
 
 #endif
