@@ -11,7 +11,7 @@
 
 学校生活の中にある「身近な不便」を1つ選び、**C言語・Makefile・Git** を活用して解決するコマンドラインツールを3人1組で開発する。
 
-- 期間: 3週間
+- 期間: 約一ヶ月
 - 班構成: 3名
 - 評価: 100点満点
 
@@ -105,8 +105,8 @@ your-project/
 `data.csv` の形式（自分のプロジェクトに合わせて書き換える）:
 
 ```csv
-id,title,deadline,priority,done
-1,Math homework,2026-05-13,5,0
+title,deadline,priority,done
+教科名,2026-05-13,5,0
 ```
 
 ---
