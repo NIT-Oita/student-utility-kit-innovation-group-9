@@ -1,13 +1,13 @@
 //担当 小股
 //test文章
 #include "common.h"
- 
+
 int output(){
     printf("\n\n\x1b[34m~~~~~~~~~~~~~~~\x1b[39m\n課題出力\n\x1b[34m~~~~~~~~~~~~~~~\x1b[39m\n\n");
     DATA task[MAX_TASKS];
     int count = 0;
     csv_yomikomi(task,&count);
- 
+
     for(int i = 0; i < count; i++){
         printf("課題名:%s\n", task[i].name);
         printf("締切:%s\n", task[i].deadline);
@@ -20,7 +20,7 @@ int output(){
         printf("\x1b[32m--------------------\x1b[39m\n\n");
     }
 }
- 
+
 int input(){
     DATA task;
     printf("追加する課題名を入力\n\x1b[33m>>>\x1b[39m");
@@ -31,7 +31,7 @@ int input(){
     scanf("%d",&task.yuusen);
     printf("課題の完了の有無を入力(終了済み:0 未終了:1)\n\x1b[33m>>>\x1b[39m");
     scanf("%d",&task.done);
- 
+
     csv_kakikomi(&task);
     return 0;
 }
