@@ -91,11 +91,10 @@ your-project/
 │   ├── main.c
 │   ├── ui.c   ui.h
 │   ├── logic.c logic.h
-│   └── storage.c
-├── data/
-│   └── tasks.csv
+│   ├── storage.c
+│   └──data.csv
 └── tests/
-    └── test_xxx.c
+    └── test_004.c
 ```
 
 ---
