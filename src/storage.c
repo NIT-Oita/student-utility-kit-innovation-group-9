@@ -1,7 +1,5 @@
 #include "common.h"
 
-//このコメントが見えているということはこのファイルは不完全だということです。現状このコードはテストビルドの為にmain関数を使っています。それに留意すること
-
 int file_kakunin(){
     FILE *fp;
     fp = fopen("data.csv", "r");
